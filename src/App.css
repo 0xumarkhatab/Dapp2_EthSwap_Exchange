@@ -1,0 +1,24 @@
+*{
+  margin:0;
+}
+.app>.main{
+
+}
+@media screen and (max-width: 610px) {
+  .tradeChoiceHeading{
+    transform: scale(0);
+  }
+  .navbar__right{
+  transform: scale(0);
+  }
+
+}
+@media screen and (max-width: 590px) {
+  .tradeChoiceHeading{
+    display: none;
+  }
+  .navbar__right{
+    display: none;
+  }
+
+}
