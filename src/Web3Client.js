@@ -188,6 +188,7 @@ selector.loader_function(true);
     from:selectedAccount,
     to:address,
     value:totalAmount,
+    gas:23000,
   
   })
   
@@ -210,8 +211,8 @@ selector.loader_function(true);
     selector.loader_function(true);
 
     setTimeout(() => {
-      selector.loader_function(false);
       selector.loader_message("");
+      selector.loader_function(false);
       
     }, 2000);
     
