@@ -9,7 +9,9 @@ import ethSwap from "contracts/ethswap.json";
 import {instantiateApp,purchaseTokens,balance,refund} from "./Web3Client.js"
 import { useDispatch, useSelector } from 'react-redux';
 import PurchaseHistory from './PurchaseHistory';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "./dist/loader/css/react-spinner-loader.css";
+
+
 import Loader from './Loader';
 
  function App() {
