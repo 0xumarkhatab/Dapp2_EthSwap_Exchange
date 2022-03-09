@@ -1,0 +1,45 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    
+}
+
+.login__top{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.login__top>a>img{
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.login__top >div{
+    min-width: 200px;   
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+
+}
+.login__bottom>button{
+    font-weight: 500;
+    padding: 10px;
+    transition: all 400ms ease-in;
+}
+
+.login__bottom>button:hover{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    /* border: 1px solid grey; */
+    transform: scale(1.04);
+    box-shadow: 5px 5px 5px 5px  rgba(linear-gradient(right,red,pink),0.8);
+
+}

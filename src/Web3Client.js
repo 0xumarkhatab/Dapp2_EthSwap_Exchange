@@ -54,16 +54,6 @@ contract = await (new  web3.eth.Contract(ethSwap.abi, address) );
 
 console.log("Contract is ",contract);
 console.log("calling Fundme function ");
-// await contract.methods.fundMe().send({
-//   from:selectedAccount,
-//   to:address,
-//   value:100000000000000000,
-
-// })
-
-// .on('receipt',(receipt)=>{
-//   console.log("receipt is ",receipt);
-// })
 
 }
 else{
@@ -283,12 +273,8 @@ selector.loader_function(true);
 export async function instantiateApp(dispatch){
 await init(dispatch);
 await updateBalances();
-  //console.log("wanna call purchase")
-  //console.log("current balance of User Before Purchase",Userbalance());
-  //purchaseTokens(100);
- // console.log("current balance of User After Purchase",Userbalance());
-//  refund(0);
-//  console.log("current balance of User After Refund",Userbalance());
+await updateBalances();
+
 
 
 }
