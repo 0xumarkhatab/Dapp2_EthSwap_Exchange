@@ -121,14 +121,14 @@ export async function refund(numTokens,selector){
   
   })
   .on('transactionHash', function(hash){
-    selector.loader_message("Tx Hash Obtained ");
+    selector.loader_message("Waiting to Refund");
     selector.loader_function(true);
     
 })
 .on('receipt', function(receipt){
   console.log("receipt of refund is ",receipt);
   updateBalances();
-  selector.loader_message("success");
+  selector.loader_message("Success");
   selector.loader_function(true);
   
 })
@@ -169,7 +169,7 @@ export async function purchaseTokens(amount,selector){
 
 console.log("selector in purchase token is ",selector)
 
-selector.loader_message("Transferring Funds ");
+selector.loader_message("Funds Transfer initiated");
 selector.loader_function(true);
 
 
@@ -183,7 +183,7 @@ selector.loader_function(true);
   })
   
   .on('transactionHash', function(hash){
-    selector.loader_message("Funds Transfer Tx Hash Obtained ");
+    selector.loader_message("Transferring Funds.. ");
     selector.loader_function(true);
     
 })
@@ -222,15 +222,17 @@ selector.loader_function(true);
 
 })
 
-selector.loader_message("Purchase Transaction Initiated");
+selector.loader_function(false);
+selector.loader_message("Purchase Initiated");
 selector.loader_function(true);
 
   await contract.methods.purchase(selectedAccount,amount).send({
   from:selectedAccount,
 })
 .on('transactionHash', function(hash){
-   selector.loader_message("Purchase Tx hash obtained : ");
-  selector.loader_function(true);
+   selector.loader_message("Purchase Confirmed: ");
+    selector.loader_function(true);
+    selector.loader_message("Waiting.. ");
   
 })
 .on('receipt', function(receipt){
