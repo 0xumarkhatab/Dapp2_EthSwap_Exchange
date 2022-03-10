@@ -1,5 +1,6 @@
 ### Eth-Swap Exchange
-    A Decentralized CryptoCurrency Exchange Platform where you can trade your Ethereum Balance for a new CryptoCurrency called "U Tokens".
+    A Decentralized CryptoCurrency Exchange Platform 
+    where you can trade your Ethereum Balance for a new CryptoCurrency called "U Tokens".
 ###### Price
     One U Token costs 0.001 Eth
     or 
