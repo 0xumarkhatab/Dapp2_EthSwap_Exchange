@@ -51,5 +51,9 @@ https://user-images.githubusercontent.com/71306738/157583175-96b65649-c9af-4ce6-
 ### Deployment Link
 ###### Caution:
               Login with Test Account. Don't lose original money .
+              if you don't have test Ether , grab from Rinkeby faucet 
+              from the following link
+              https://faucet.rinkeby.io/
+              
 In order to have the live demo , visit 
 https://eth-swap-umaresso.vercel.app/
